@@ -1,0 +1,34 @@
+# LaTeX build artefacts
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.nav
+*.snm
+*.vrb
+*.run.xml
+*-blx.bib
+
+# Editor / OS
+.DS_Store
+*~
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Compiled PDFs of the manuscripts (regenerate from source).
+# Delete these two lines if you want to ship built PDFs with the repo.
+manuscripts/main.pdf
+manuscripts/tcgs_bridge_companion.pdf
