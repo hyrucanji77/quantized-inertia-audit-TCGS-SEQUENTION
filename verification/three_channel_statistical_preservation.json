@@ -1,0 +1,41 @@
+{
+  "unchanged_statistical_fields": {
+    "configuration": true,
+    "design": true,
+    "threshold": true,
+    "threshold_calibration": true,
+    "null_size_evaluation": true,
+    "independent_kernel_power_evaluation": true,
+    "alternative_realized_mean_squared_kernel_norm_per_channel": true,
+    "alternative_expected_squared_kernel_norm_per_channel": true,
+    "statistic_arrays": true,
+    "figure": true
+  },
+  "capacity_metadata": {
+    "independent_kernel_capacity": 27,
+    "effective_capacity_ratio": 0.2962962962962963,
+    "capacity_denominator": "independent mean kernels conditional on the frozen readable ranges",
+    "raw_physical_kernel_capacity": 108,
+    "raw_physical_capacity_ratio_diagnostic": 0.07407407407407407,
+    "capacity_gate_passes": false,
+    "calibration_scalar_observations": 540,
+    "informative_projected_calibration_scalar_observations": 270,
+    "parameter_to_calibration_data_ratio": 0.02962962962962963,
+    "raw_parameter_to_calibration_data_ratio_diagnostic": 0.014814814814814815
+  },
+  "current_script_hash_matches": true,
+  "previous_script_sha256": "aa297f317aaf416b1699ae7045af1fee547893110958df093a08d44df72de65b",
+  "current_script_sha256": "1ecd2aaf1e97f7a593c062479b36255d9b542c7ccac6ba02e68720abac68e377",
+  "portfolio_rank_checks": {
+    "14": {
+      "rank_unchanged": true,
+      "gaussian_rank_unchanged": true,
+      "maximum_singular_value_roundoff_difference": 0.0
+    },
+    "18": {
+      "rank_unchanged": true,
+      "gaussian_rank_unchanged": true,
+      "maximum_singular_value_roundoff_difference": 8.526512829121202e-14
+    }
+  }
+}

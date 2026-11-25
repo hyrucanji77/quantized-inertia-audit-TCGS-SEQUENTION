@@ -1,5 +1,126 @@
 # Changelog
 
+## V8 computational release — 25 November 2026
+
+This update publishes the computational materials accompanying the V8 audit and
+conditional bridge companion: six active Python programs, seven primary JSON
+records, five figures, and the numerical verification and rerun evidence.
+Existing `manuscripts/*.tex` and `manuscripts/*.bib` remain unchanged from the
+earlier repository release. They are historical sources and are not the V8
+manuscript sources for this computational release. No V8 LaTeX source or Overleaf
+archive is added here.
+
+### Conditional capacity and informative data
+
+The independent comparison dimension is now conditional on the frozen channel
+ranges, `D_ind = sum_chi r_in,chi*r_out,chi`. The raw physical count is retained
+only as a diagnostic. The ceiling remains `rho_max = 0.25`:
+
+- The original three-channel control has ratio `8/27 = 0.29630` and fails.
+- The partial-readability design has ratio `16/27 = 0.59259` and fails.
+- The four-channel control has ratio `8/36 = 0.22222` and passes this capacity
+  gate. Against independent rank-two blocks, its secondary ratio is exactly
+  `8/32 = 0.25`; the primary comparison measures both sharing and low rank.
+
+Calibration counts exclude output coordinates carrying only known noise:
+270 informative responses for three channels and 360 for four channels, giving
+`eta_fit = 8/270` and `8/360`. Their raw recorded-coordinate counts, 540 and 720,
+are diagnostic. A satisfactory residual test does not compensate for a failed
+capacity gate.
+
+The near-saturated example is computed on the identifiable image: the
+18-dimensional construction has visible rank 196 and kernel dimension 128,
+giving `196/200 = 0.98`. The 14-dimensional comparison has visible rank 164,
+giving `164/200 = 0.82`. These replace the older nominal-dimension interpretation
+in the historical entry below.
+
+### Partial readability and local alternatives
+
+`code/bridge_partial_local_demo.py` supplies three partially overlapping readable
+sectors of a six-dimensional bridge, explicit unread directions, the correlated
+shared-sector covariance and rank-eight contrast statistic, and the complete
+12-point local power grid. Local alternatives stay within each channel's frozen
+ranges and retain rank two generically. The recorded size is `126/2500 = 0.0504`;
+at the first tested amplitude meeting the 95% planning target, `delta = 0.10`,
+the rejection rate is `2403/2500 = 0.9612`.
+
+This grid concerns shared-sector compatibility in the partial design, which
+fails the capacity ceiling. Its amplitude is relative RMS displacement from a
+fixed baseline, not distance to the entire null family. It is not a measured
+local power curve for the four-channel control.
+
+### Four-channel control
+
+`code/bridge_four_channel_demo.py` provides a frozen four-channel design with
+rank-three maps, a common rank-two `3 x 3` bridge, 30 calibration and 20 held-out
+probes per channel, and known Gaussian noise of standard deviation `0.03`.
+The alternative consists of independent rank-two readable blocks inside the
+same frozen ranges, with squared Frobenius norm `1.25` per block. Threshold,
+null, and alternative evaluation each use 2,500 replicates.
+
+The calibrated threshold is `537.750510`; the recorded null rejection rate is
+`118/2500 = 0.0472`, and the alternative rejection rate is `2500/2500`.
+The median statistics are `482.814` under the common truth and `86539.754` under
+the specified alternative. Pointwise Wilson intervals and descriptive
+held-out comparison scores are retained in the JSON results.
+
+The estimator is pooled unconstrained least squares followed by rank-two SVD
+truncation. No constrained maximum-likelihood identity, general lower-bound
+power guarantee, uniform composite-null size guarantee, or physical validation
+is asserted. The successful capacity/data counts and synthetic residual results
+do not establish every bridge-protocol condition or distinguish a physical
+bridge from a calibrated standard-physics common response.
+
+### Scalar closure and conditional Cassini proxies
+
+`scripts/qi_scalar_cassini_check.py` verifies the exact scalar root, the
+residual-dependent acceleration excess and its inverse relation, the matched
+simple-MOND scalar identity when `b = a_Q`, and the two distinct coefficient
+roundings. A scalar-map identity at matched input and scale is not equivalence
+of complete theories. A constant residual assignment does not by itself imply
+that the realized small-scale acceleration increases with radius; a changing
+lower bound and the actual residual must be distinguished.
+
+The high-acceleration excess tends to `a_Q` for fixed finite residual `b`.
+The Cassini calculations are explicitly conditional sensitivity proxies based
+on the stated persistent sunward perturbation. The radial displacement of about
+2,130 km follows from Banik and Kroupa's Eq. (7) at half an orbit, and is kept
+separate from the about 7,000 km total in-plane displacement. These calculations
+are not a tracking-data reanalysis or a QI ephemeris fit. Inputs and source
+attribution are retained in `results/qi_scalar_cassini_check.json`.
+
+### Reproducibility, figures, and provenance
+
+All five computational figures are supplied, including the bridge figures.
+The original three-channel per-replicate statistics are preserved, while its
+capacity/data metadata and stale figure title are corrected. The primary
+four-channel design, result file, and figure are also preserved unchanged.
+
+The exact original four-channel generating code is archived as
+`verification/bridge_four_channel_generating_v8.py`. The active executable fixes
+an overly strict loader comparison: configuration is checked exactly, saved
+arrays are validated with declared numerical tolerances and then used directly,
+and diagnostic QR/SVD roundoff is accepted within the stated checks. A separate
+complete 7,500-replicate rerun under the active executable reproduced all primary
+statistic arrays and alternative blocks exactly in the recorded environment.
+Both code hashes and the rerun evidence are supplied.
+
+The tested environment is CPython 3.12.14, NumPy 2.3.5, and Matplotlib 3.10.8.
+The current README gives repository-root commands, output-overwrite behavior,
+and a separate-output reproduction example. Cross-platform floating-point
+results should be compared with appropriate tolerances.
+
+## Historical release entries
+
+The entries below are preserved verbatim as the record of earlier repository
+releases. They describe the manuscripts and interpretations at those times;
+they are **not current scientific or computational assertions**. In particular,
+the residual-profile inference, unqualified MOND distinction, identifiable
+counterexample counts, and blanket power characterization in the older entry
+are superseded or qualified by the V8 computational descriptions above. The
+older manuscript sources remain available unchanged for that historical
+context.
+
 ## v5.0.0 — August 2026
 
 Revision of the V4 pair. The headline change is a **retraction and replacement**:

@@ -1,0 +1,31 @@
+{
+  "threshold_sample": {
+    "common_first_T_direct_vectorized_lstsq": 507.01055890378086,
+    "independent_first_T_direct_vectorized_lstsq": 515.2009303928072,
+    "common_abs_difference": 1.7053025658242404e-12,
+    "independent_abs_difference": 1.0231815394945443e-12
+  },
+  "null_evaluation": {
+    "common_first_T_direct_vectorized_lstsq": 480.0903955983548,
+    "independent_first_T_direct_vectorized_lstsq": 521.4277896063902,
+    "common_abs_difference": 4.547473508864641e-13,
+    "independent_abs_difference": 1.5916157281026244e-12,
+    "recomputed_rejections": 118
+  },
+  "alternative_evaluation": {
+    "common_first_T_direct_vectorized_lstsq": 91401.67617466502,
+    "independent_first_T_direct_vectorized_lstsq": 500.38246727502104,
+    "common_abs_difference": 1.4551915228366852e-11,
+    "independent_abs_difference": 1.7621459846850485e-12,
+    "recomputed_rejections": 2500
+  },
+  "record_integrity": {
+    "script_and_design_hashes_match": true,
+    "design_saved_before_simulation": true,
+    "threshold_recomputed_exactly": true,
+    "figure_visually_inspected": true,
+    "fixed_seed_no_retuning": true,
+    "script_sha256": "92c9bdc03b763f630ab2859036a71aca1bd890d30eb754230efe6d3636313a1c",
+    "scope": "Checks apply to the original generating script, design and numerical results; the original script is preserved in verification/bridge_four_channel_generating_v8.py. The delivered loader repair and exact rerun comparison are documented separately in verification/bridge_four_channel_loader_amendment.json."
+  }
+}

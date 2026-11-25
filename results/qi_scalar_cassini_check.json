@@ -1,0 +1,96 @@
+{
+  "conditional_sensitivity_proxies": {
+    "qualification": "Total trajectory norm is not a ranging observable. Neither proxy inherits a 5-sigma QI interpretation; projections, Sun/Earth/Saturn/spacecraft responses, and fitted ephemeris parameters must be modeled.",
+    "radial_component_proxy_epsilon_m_s2": 3.605633802816901e-15,
+    "total_norm_proxy_epsilon_m_s2": 1.0971428571428572e-15
+  },
+  "input_parameters": {
+    "BK2020_empirical_a0_m_s2": 1.2e-10,
+    "BK2020_quoted_5sigma_tracking_limit_m": 160.0,
+    "BK2020_radial_displacement_m": 2130000.0,
+    "BK2020_reference_alpha": 0.4,
+    "BK2020_reference_sunward_acceleration_m_s2": 4.8e-11,
+    "BK2020_rounded_total_norm_displacement_m": 7000000.0,
+    "a_Q_m_s2": 2.04262540622004e-10,
+    "c_m_s": 299792458.0,
+    "representative_saturn_g_m_s2": 6.5e-05,
+    "theta_m": 8.8e+26
+  },
+  "saturn_scalar_cases": {
+    "assumed_1e-15_threshold": {
+      "b_m_s2": 13.277000140634522,
+      "delta_m_s2": 1e-15,
+      "delta_over_g": 1.5384615384615385e-11,
+      "high_acceleration_approximation_m_s2": 9.999999999846155e-16,
+      "illustrative_radial_component_m": 44.375,
+      "illustrative_total_norm_displacement_m": 145.83333333333334
+    },
+    "constant_galactic_assignment": {
+      "b_m_s2": 2.04262540622004e-10,
+      "delta_m_s2": 2.0426189873087673e-10,
+      "delta_over_g": 3.142490749705796e-06,
+      "high_acceleration_approximation_m_s2": 2.042618987288596e-10,
+      "illustrative_radial_component_m": 9064121.756182656,
+      "illustrative_total_norm_displacement_m": 29788193.564919524
+    },
+    "no_residual": {
+      "b_m_s2": 0.0,
+      "delta_m_s2": 2.04262540622004e-10,
+      "delta_over_g": 3.142500624953908e-06,
+      "high_acceleration_approximation_m_s2": 2.04262540622004e-10,
+      "illustrative_radial_component_m": 9064150.240101429,
+      "illustrative_total_norm_displacement_m": 29788287.17404225
+    },
+    "radial_proxy_threshold": {
+      "b_m_s2": 3.682246035245464,
+      "delta_m_s2": 3.605633802816901e-15,
+      "delta_over_g": 5.547128927410618e-11,
+      "high_acceleration_approximation_m_s2": 3.605633802616896e-15,
+      "illustrative_radial_component_m": 160.0,
+      "illustrative_total_norm_displacement_m": 525.8215962441315
+    },
+    "total_norm_proxy_threshold": {
+      "b_m_s2": 12.101426664658925,
+      "delta_m_s2": 1.0971428571428572e-15,
+      "delta_over_g": 1.687912087912088e-11,
+      "high_acceleration_approximation_m_s2": 1.0971428571243385e-15,
+      "illustrative_radial_component_m": 48.68571428571428,
+      "illustrative_total_norm_displacement_m": 160.0
+    },
+    "unit_residual": {
+      "b_m_s2": 1.0,
+      "delta_m_s2": 1.3276202189999565e-14,
+      "delta_over_g": 2.0424926446153176e-10,
+      "high_acceleration_approximation_m_s2": 1.3276202187288087e-14,
+      "illustrative_radial_component_m": 589.1314721812307,
+      "illustrative_total_norm_displacement_m": 1936.1128193749366
+    }
+  },
+  "scope": "Deterministic scalar algebra and conditional sensitivity proxies; no ephemeris fit, tracking-data analysis, or universal QI exclusion.",
+  "sources": {
+    "gravitational_dipole_Cassini_comparison": "https://doi.org/10.1093/mnras/staa1447",
+    "scalar_QI": "https://arxiv.org/abs/1207.7007",
+    "simple_MOND_mu_nu_equations_42_43": "https://doi.org/10.12942/lrr-2012-10"
+  },
+  "verification": {
+    "all_assertions_passed": true,
+    "decimal_precision": 80,
+    "force_branch_and_inverse_cases": 56,
+    "maximum_inverse_error_normalized_by_max_aQ_b": 1.4324660166568006e-68,
+    "maximum_relative_force_error": 1.8737689682822323e-72,
+    "maximum_relative_simple_MOND_error": 2.22741403873314e-77,
+    "simple_MOND_identity_cases": 8
+  },
+  "wien_roundings": {
+    "above_rounded_beta_percentage_denominator": 1.9739208802178718,
+    "b_W": 0.20140523527264217,
+    "below_2_percentage_denominator": 2,
+    "restored_b_W_times_pi2": 1.987789996449307,
+    "restored_beta_coefficient_percent_below_2": 0.6105001775346502,
+    "restored_coefficient_percent_above_rounded_beta": 0.7026176363210903,
+    "rounded_beta_0p2_times_pi2": 1.9739208802178718,
+    "rounded_beta_coefficient_percent_below_2": 1.3039559891064139,
+    "two_pi_b_W": 1.265466415054113,
+    "wavelength_peak_x": 4.965114231744276
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "original_file_sha256": {
+    "code/bridge_four_channel_demo.py": "92c9bdc03b763f630ab2859036a71aca1bd890d30eb754230efe6d3636313a1c",
+    "results/bridge_four_channel_design.json": "d5997d0a79ccc088d8b9e342d5867517f786ab3e8a8c796280bcc06bab5e576b",
+    "results/bridge_four_channel_results.json": "8f3c26696d053ea9d291ca8e620eb44912536f518756d89a6f6ce92f2bc1cd63",
+    "figures/bridge_four_channel_results.pdf": "809a73a41492e5b788ab207741ca3e72f5c026ab876f934394d27393f7987732"
+  },
+  "preserved_original_generating_script": "verification/bridge_four_channel_generating_v8.py",
+  "repair_reason": "Exact dictionary equality included floating-point QR/SVD diagnostics and could reject a mathematically identical rerun under numerical jitter.",
+  "stochastic_design_changed": false,
+  "original_results_changed": false,
+  "delivered_script_sha256": "f5b886df757aec5f67d1aa34444c4ff94c1b94e6ecb0977c8b81c25df441b76b",
+  "original_generating_script_sha256": "92c9bdc03b763f630ab2859036a71aca1bd890d30eb754230efe6d3636313a1c",
+  "unchanged_original_design_result_and_figure_hashes_verified": true,
+  "implementation_changes": [
+    "Configuration compared exactly, excluding any numerical diagnostics.",
+    "Saved fixed arrays validated against regenerated arrays at relative and absolute tolerance 2e-12, then used directly.",
+    "Structural/OLS diagnostics recomputed under tolerance assertions, never compared for bit identity.",
+    "New rerun records distinguish current script SHA from original frozen script SHA."
+  ],
+  "separate_rerun_directory": "verification/four_channel_loader_rerun",
+  "per_replicate_max_absolute_differences": {
+    "threshold_sample": {
+      "common_physical_T": 0.0,
+      "independent_physical_T": 0.0,
+      "independent_minus_common_T": 0.0,
+      "common_retained_T": 0.0,
+      "independent_retained_T": 0.0,
+      "orthogonal_output_noise_T": 0.0
+    },
+    "null_evaluation": {
+      "common_physical_T": 0.0,
+      "independent_physical_T": 0.0,
+      "independent_minus_common_T": 0.0,
+      "common_retained_T": 0.0,
+      "independent_retained_T": 0.0,
+      "orthogonal_output_noise_T": 0.0
+    },
+    "alternative_evaluation": {
+      "common_physical_T": 0.0,
+      "independent_physical_T": 0.0,
+      "independent_minus_common_T": 0.0,
+      "common_retained_T": 0.0,
+      "independent_retained_T": 0.0,
+      "orthogonal_output_noise_T": 0.0
+    }
+  },
+  "alternative_blocks_max_absolute_difference": 0.0,
+  "threshold_absolute_difference": 0.0,
+  "reported_summary_objects_identical": true,
+  "loader_guard_checks": {
+    "8p5e_minus14_QR_and_SVD_jitter_accepted_with_saved_arrays_authoritative": true,
+    "changed_discrete_configuration_rejected": true,
+    "material_fixed_map_change_rejected": true
+  },
+  "status": "implementation-only repair verified; all original numerical records retained unchanged"
+}

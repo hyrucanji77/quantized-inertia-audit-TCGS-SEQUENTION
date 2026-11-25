@@ -1,0 +1,35 @@
+# Python and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Editor and operating-system files
+.DS_Store
+*~
+.vscode/
+.idea/
+
+# This computational release excludes LaTeX/Overleaf source and build files.
+# These rules do not untrack manuscript files from earlier repository commits.
+*.tex
+*.bib
+*.bbl
+*.aux
+*.blg
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.nav
+*.snm
+*.vrb
+*.run.xml
+*-blx.bib
+*Overleaf*.zip
+QI_TCGS_Complete*.zip
